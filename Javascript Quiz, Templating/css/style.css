@@ -1,0 +1,90 @@
+h1{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+li{
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+ol>li{
+    font-size: 24px;
+
+}
+label {
+	display: block;
+	font-weight: normal;
+	cursor: pointer;
+    font-size: 20px;
+}
+.wrapper{
+    width: 42%;
+    margin: 0 auto;
+}
+.buttons{
+    text-align: center;
+    margin: 0 auto;
+}
+button{
+    border: aqua;
+    border-radius: 100px;
+    background-color: #38B2CE;
+    color: white;
+    margin-right: 20px;
+    padding: 16px 15px;
+    cursor: pointer;
+    width: 250px;
+    font-size: 16px;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+input{
+    margin-right: 10px;
+}
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+button:last-child{
+    width: 200px;
+    background-color: white;
+    border: 2px solid #38B2CE;
+    color: #38B2CE;
+}
+button:hover{
+    background-color: #015367;
+}
+button:last-child:hover{
+    background-color: #38B2CE;
+    color: white;
+}
+.modal{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+
+
+}
+.score{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #fff;
+    left: 30%;
+    top: 20%;
+    width: 40%;
+    height: 320px;
+    position: relative;
+    border-radius: 600px;
+
+
+}
+.result{
+    font-size: 40px;
+    font-family: 'Raleway';
+}

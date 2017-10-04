@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="js/template.js" charset="utf-8"></script>
+    <script src="js/question.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <script type="text/html" id="test">
+            <h1>Тесты по знанию JavaScript</h1>
+            <ol>
+                <% var id = 1; %>
+                <% for (var i = 0; i < data.length; i++) { %>
+                    <li><%= data[i].question%>
+                        <% for (var l=0; l<data[i].answer.length; l++){ %>
+                            <label for="<%= id%>answer"><input type="radio" name="<%= i+1%>" id="<%= id%>answer" ><%= data[i].answer[l] %></label>
+                        <% id++; %>
+                        <% } %>
+                    </li>
+                <%}%>
+            </ol>
+        </script>
+    </div>
+    <div class="buttons">
+        <button type="button"  id="send">Проверить мои результаты</button>
+        <button type="button"  id="reset">Очистить результат</button>
+    </div>
+    <div class="modal">
+        <div class="score">
+            <p class="result"></p>
+        </div>
+    </div>
+</body>
+</html>
